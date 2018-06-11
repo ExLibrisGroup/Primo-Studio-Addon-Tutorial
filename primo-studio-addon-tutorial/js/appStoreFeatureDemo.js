@@ -8,7 +8,7 @@ app.controller('primoStudioAddonTutorialController', ['primoStudioAddonTutorialS
 	vm.configuredText = getConfiguredText();
 	
 	function getConfiguredText(){
-		return addonParameters.text;
+		return addonParameters[0].text;
 	}
 
 }]);
