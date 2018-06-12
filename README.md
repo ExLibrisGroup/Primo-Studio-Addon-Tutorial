@@ -24,7 +24,7 @@ In this tutorial the following is our {main-component}:
     ```
     app.component('primoStudioAddonTutorial', {
     ```     
-4. At this point your add-on is ready to be [published to NPM](https://www.tutorialspoint.com/nodejs/nodejs_npm.htm).
+4. At this point your add-on is ready to be [published to NPM](https://eladnava.com/publishing-your-first-package-to-npm/).
 
 5. To publish your add-on to Primo Studio see this link: 
 > https://github.com/ShoulM/PrimoFeaturesJSON  
