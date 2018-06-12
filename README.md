@@ -18,7 +18,7 @@ The js folder must contain a single js file:
     2. If you are not using [primo devenv](https://github.com/ExLibrisGroup/primo-explore-devenv) for development, all your js code must be bundled to a single file. Delete all files except for the bundle js file.
     You can use concatenation, [browserify](http://browserify.org/), [webpack](https://webpack.js.org/) or any other bundling method for creating the bundle js file.
 
-    Rename your single js file {npm-id-camel-case}.js. In this tutorial the js folder contains a single js file called 'primoStudioAddonTutorial.js'
+    Rename your single js file to {npm-id-camel-case}.js. In this tutorial the js folder contains a single js file called 'primoStudioAddonTutorial.js'
 3. In your js file rename your {primo-hook} component as {npm-id-camel-case}. This is now your {main-component}. 
 In this tutorial the following is our {main-component}:
     ```
