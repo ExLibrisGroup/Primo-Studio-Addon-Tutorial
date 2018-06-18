@@ -11,6 +11,20 @@ Before we start the tutorial lets agree on a few definitions:
   Primo studio add-ons must observe the following restrictions:
    1.	Component template html must be inline and not in a separate file.
    2.	Use only a single primo-hook as a selector for your angular component. This is because Primo Studio generates code for a specific hook in order to allow installation of a few add-ons on the same primo-hook.
+   3. If you create a new module for your component, add the following code: ```app.requires.push('name of new module');```
+   
+   Some add-ons allow the user to configure parameters when installing them in Primo-Studio. To access those parameters you must inject a service called {npm-id-camel-case}StudioConfig.
+   In our example: 
+   
+   ```
+   app.controller('primoStudioAddonTutorialController', ['primoStudioAddonTutorialStudioConfig',function (addonParameters) {
+   ```
+   
+   and then we retrieve the 'text' parameter with the code: 
+   
+   	function getConfiguredText(){
+   		return addonParameters[0].text;
+   	}
 
 2. copy the VIEW_CODE folder where your customization sits to a new location. 
 The js folder must contain a single js file:
