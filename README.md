@@ -21,10 +21,12 @@ Before we start the tutorial lets agree on a few definitions:
    ```
    
    and then we retrieve the 'text' parameter with the code: 
-   
-   	function getConfiguredText(){
+```
+        function getConfiguredText(){
    		return addonParameters[0].text;
    	}
+   
+```
 
 2. copy the VIEW_CODE folder where your customization sits to a new location. 
 The js folder must contain a single js file:
